@@ -4,11 +4,9 @@ public class Persona {
     String nombre;
     String apellido;
     int edad;
-    Carrera carrera;
 
     //Constructor
-    public Persona(String nombre, String apellido, int edad, String nombreCarrera,int duracion,boolean estaEnCurso){
-        carrera = new Carrera(nombreCarrera,duracion, estaEnCurso );
+    public Persona(String nombre, String apellido, int edad){
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
