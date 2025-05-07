@@ -6,6 +6,15 @@ public class Persona {
     int edad;
     Carrera carrera;
 
+    //Constructor
+    public Persona(String nombre, String apellido, int edad, String nombreCarrera,int duracion,boolean estaEnCurso){
+        carrera = new Carrera(nombreCarrera,duracion, estaEnCurso );
+        this.nombre = nombre;
+        this.apellido = apellido;
+        this.edad = edad;
+
+    }
+
     //Metodos (Funciones)
     public String darNombreCompleto(){
         return apellido + ", " + nombre;
